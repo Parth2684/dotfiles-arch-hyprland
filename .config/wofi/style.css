@@ -1,0 +1,65 @@
+window {
+  background-color: rgba(18, 18, 24, 0.50);
+  border-radius: 20px;
+  border: 2px solid #7aa2f7;
+  padding: 6px;
+  font-family: JetBrainsMono Nerd Font;
+}
+
+/* Search bar */
+#input {
+  margin: 14px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-size: 15px;
+}
+
+/* Entry container */
+#entry {
+  margin: 4px 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+}
+
+/* Icon spacing (THIS is what you wanted) */
+#entry image {
+  margin-right: 14px;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+#entry:not(:selected) label {
+  color: #9aa0b3;
+}
+
+/* App name text */
+#entry label {
+  font-size: 14px;
+}
+
+/* Selected item */
+#entry:selected {
+  background: linear-gradient(
+    135deg,
+    #7aa2f7,
+    #9aa5ff
+  );
+  color: #0f0f17;
+}
+
+/* Smooth hover vibe */
+#entry:hover {
+  background-color: rgba(122, 162, 247, 0.15);
+}
+
+/* Scrollbar – subtle, not ugly */
+scrollbar {
+  background: transparent;
+}
+
+scrollbar slider {
+  background-color: rgba(122, 162, 247, 0.4);
+  border-radius: 8px;
+}

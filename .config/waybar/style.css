@@ -1,0 +1,156 @@
+/* ─────────────────────────────
+   GLOBAL
+   ───────────────────────────── */
+* {
+    font-family:
+        JetBrainsMono Nerd Font,
+        FontAwesome,
+        /*Noto Emoji,*/
+        sans-serif;
+    font-size: 13px;
+    border: none;
+    min-height: 0;
+}
+
+/* ─────────────────────────────
+   WAYBAR WINDOW
+   ───────────────────────────── */
+window#waybar {
+    background: rgba(30, 30, 46, 0.75);
+    color: #cdd6f4;
+    border-radius: 12px;
+    margin: 6px;
+}
+
+/* ─────────────────────────────
+   MODULE CONTAINERS
+   ───────────────────────────── */
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 4px;
+}
+
+/* Generic module style */
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#tray,
+#idle_inhibitor,
+#power-profiles-daemon,
+#custom-media,
+#mpd,
+#keyboard-state,
+#window {
+    background: rgba(255, 255, 255, 0.08);
+    margin: 0 4px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+}
+
+#clock:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#network:hover,
+#pulseaudio:hover,
+#custom-media:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* ─────────────────────────────
+   WORKSPACES
+   ───────────────────────────── */
+#workspaces {
+    background: transparent;
+    margin: 0 6px;
+}
+
+#workspaces button {
+    padding: 2px 10px;
+    margin: 0 3px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #cdd6f4;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#workspaces button.active {
+    background: #89b4fa;
+    color: #11111b;
+}
+
+#workspaces button.urgent {
+    background: #f38ba8;
+    color: #11111b;
+}
+
+/* ─────────────────────────────
+   STATES
+   ───────────────────────────── */
+#pulseaudio.muted,
+#network.disconnected {
+    background: rgba(243, 139, 168, 0.25);
+    color: #f38ba8;
+}
+
+#battery.charging,
+#battery.plugged {
+    background: rgba(166, 227, 161, 0.25);
+    color: #a6e3a1;
+}
+
+#battery.critical:not(.charging) {
+    background: rgba(243, 139, 168, 0.35);
+    color: #f38ba8;
+}
+
+/* ─────────────────────────────
+   MEDIA / TRAY
+   ───────────────────────────── */
+#custom-media {
+    min-width: 120px;
+}
+
+#tray {
+    padding: 4px 8px;
+}
+
+#tray > .needs-attention {
+    background: rgba(243, 139, 168, 0.4);
+    border-radius: 6px;
+}
+
+/* ─────────────────────────────
+   POWER PROFILES
+   ───────────────────────────── */
+#power-profiles-daemon.performance {
+    background: rgba(250, 179, 135, 0.25);
+}
+
+#power-profiles-daemon.balanced {
+    background: rgba(137, 180, 250, 0.25);
+}
+
+#power-profiles-daemon.power-saver {
+    background: rgba(166, 227, 161, 0.25);
+}
+
+/* ─────────────────────────────
+   IDLE INHIBITOR
+   ───────────────────────────── */
+#idle_inhibitor.activated {
+    background: rgba(249, 226, 175, 0.3);
+    color: #f9e2af;
+}

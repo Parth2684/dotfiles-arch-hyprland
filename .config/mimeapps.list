@@ -1,0 +1,6 @@
+[Added Associations]
+image/png=gwenview-4.desktop;gwenview-3.desktop;gwenview-2.desktop;gwenview.desktop;
+
+[Default Applications]
+image/png=gwenview-4.desktop;
+inode/directory=thunar.desktop
