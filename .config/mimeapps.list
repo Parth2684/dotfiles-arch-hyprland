@@ -1,0 +1,6 @@
+[Added Associations]
+image/png=org.kde.gwenview.desktop;sxiv.desktop;swayimg.desktop;
+inode/directory=vlc.desktop;
+
+[Default Applications]
+x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop

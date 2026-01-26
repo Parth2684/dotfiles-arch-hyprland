@@ -1,0 +1,15 @@
+[General]
+LastUsedVersion=210800
+
+[MainWindow]
+MenuBar=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/arch.png
+Name1[$e]=arch.png
+
+[SideBar]
+InformationSplitterSizes=221,236
+
+[UiSettings]
+ColorScheme=KvDark

@@ -1,0 +1,153 @@
+//   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+//   "modules": [
+//     "title",
+//     "separator",
+//     "os",
+//     "host",
+//     "kernel",
+//     "uptime",
+//     "packages",
+//     "shell",
+//     "display",
+//     "de",
+//     "wm",
+//     "wmtheme",
+//     "theme",
+//     "icons",
+//     "font",
+//     "cursor",
+//     "terminal",
+//     "terminalfont",
+//     "cpu",
+//     "gpu",
+//     "memory",
+//     "swap",
+//     "disk",
+//     "localip",
+//     "battery",
+//     "poweradapter",
+//     "locale",
+//     "break",
+//     "colors"
+//   ]
+// }
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "chafa",
+    // "source": "arch",
+    "color": { "1": "red", "2": "yellow" },
+    "padding": {
+      "top": 2,
+      "right": 3,
+      "left": 3,
+    },
+    "height": 25,
+    // "width": 18
+  },
+
+  "display": {
+    "separator": " ➜ ",
+    "color": {
+      "keys": "blue",
+      // "output": ""
+    },
+  },
+
+  "modules": [
+    "title",
+    "separator",
+
+    {
+      "type": "os",
+      "key": "󰣇 OS",
+    },
+    {
+      "type": "kernel",
+      "key": " Kernel",
+    },
+    {
+      "type": "uptime",
+      "key": "󰅐 Uptime",
+    },
+    {
+      "type": "packages",
+      "key": "󰏖 Pkgs",
+    },
+    {
+      "type": "shell",
+      "key": " Shell",
+    },
+
+    "separator",
+
+    {
+      "type": "wm",
+      "key": "󰖯 WM",
+    },
+    {
+      "type": "terminal",
+      "key": " Term",
+    },
+    {
+      "type": "terminalfont",
+      "key": " Font",
+    },
+
+    "separator",
+
+    {
+      "type": "cpu",
+      "key": " CPU",
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 GPU",
+    },
+    {
+      "type": "memory",
+      "key": "🎞️ RAM",
+    },
+    {
+      "type": "swap",
+      "key": "📀Swap",
+    },
+
+    "separator",
+
+    {
+      "type": "disk",
+      "key": "󰋊 Disk",
+      "folders": ["/"],
+    },
+    {
+      "type": "battery",
+      "key": "󰁹 Battery",
+    },
+    {
+      "type": "localip",
+      "key": "󰩟 IP",
+      "showIpv6": false,
+    },
+
+    "separator",
+    {
+      "type": "bios",
+      "key": "🧠Bios (UEFI)",
+    },
+    {
+      "type": "bootmgr",
+      "key": "🔧Bootmgr",
+    },
+    {
+      "type": "display",
+      "key": "🖥️ Display (CMN15F5)",
+    },
+    {
+      "type": "datetime",
+      "key": "🗓️ Date & Time",
+    },
+    // "colors"
+  ],
+}
