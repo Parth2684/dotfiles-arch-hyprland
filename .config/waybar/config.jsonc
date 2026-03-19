@@ -153,11 +153,11 @@
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
     "format-icons": {
-        "default": "",
-        "performance": "",
-        "balanced": " ",
-        "power-saver": " "
-      }
+      "default": "",
+      "performance": "",
+      "balanced": " ",
+      "power-saver": " ",
+    },
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -203,13 +203,6 @@
   "custom/power": {
     "format": "⏻ ",
     "tooltip": false,
-    "menu": "on-click",
-    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-    "menu-actions": {
-      "shutdown": "shutdown",
-      "reboot": "reboot",
-      "suspend": "systemctl suspend",
-      "hibernate": "systemctl hibernate",
-    },
+    "on-click": "~/.config/waybar/power.sh",
   },
 }

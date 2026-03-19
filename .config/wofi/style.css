@@ -1,28 +1,37 @@
 window {
-    background-color: rgba(18, 18, 24, 0.5);
-    border-radius: 20px;
-    border: 2px solid #7aa2f7;
-    padding: 6px;
-    font-family: JetBrainsMono Nerd Font;
+    margin: 0px;
+    border: 2px solid #000000;
+    border-radius: 12px;
+    background-color: rgba(26, 26, 26, 0.8);
 }
 
-/* Search bar */
+/* Input box */
 #input {
-    margin: 14px;
-    padding: 12px 14px;
-    border-radius: 14px;
-    background-color: #1e1e2e;
-    color: #cdd6f4;
-    font-size: 15px;
+    margin: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: #2a2a2a;
+    border-radius: 6px;
+    padding: 6px;
 }
 
-/* Entry container */
+/* 🔴 Unselected entries (THIS is what you wanted) */
 #entry {
-    margin: 4px 10px;
-    padding: 12px 14px;
-    border-radius: 14px;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ff5555;   /* red text */
 }
 
+/* 🔥 Selected entry */
+#entry:selected {
+    background-color: #ff5555;
+    color: #000000;   /* black text on red */
+}
+
+/* Text spacing */
+#text {
+    margin-left: 8px;
+}
 /* Icon spacing (THIS is what you wanted) */
 #entry image {
     margin-right: 14px;
