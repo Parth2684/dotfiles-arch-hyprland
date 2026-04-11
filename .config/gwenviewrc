@@ -1,15 +1,41 @@
+[Crop]
+CropAdvancedSettingsEnabled=true
+CropRatioHeight=1
+CropRatioWidth=1
+
 [General]
 LastUsedVersion=210800
+SideBarPage=operations
 
 [MainWindow]
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Downloads/arch.png
-Name1[$e]=arch.png
+File1[$e]=$HOME/processed/why.jpg
+File10[$e]=$HOME/.local/share/com.parth.velocity/.thumbnails/videos/2d579de6-d8a6-405b-8d13-724798f7d8f4.webp
+File2[$e]=$HOME/Downloads/ChatGPT Image Mar 18, 2026, 09_46_26 AM.png
+File3[$e]=$HOME/Downloads/icons/favicon.ico
+File4[$e]=$HOME/Projects/Stormer/src-tauri/icons/android/mipmap-hdpi/ic_launcher.png
+File5[$e]=$HOME/Projects/Stormer/src-tauri/icons/icon.png
+File6[$e]=$HOME/something.svg
+File7[$e]=$HOME/Pictures/Screenshots/screenshot_2026-01-24_00:36:44.png
+File8[$e]=$HOME/.local/share/com.parth.velocity/.thumbnails/videos/3bad4012-c1bc-443e-867b-b212c97c4f70.webp
+File9[$e]=$HOME/.local/share/com.parth.velocity/.thumbnails/videos/3b7750c2-70f6-4751-b8cc-78807821f92a.webp
+Name1[$e]=why.jpg
+Name10[$e]=2d579de6-d8a6-405b-8d13-724798f7d8f4.webp
+Name2[$e]=ChatGPT Image Mar 18, 2026, 09_46_26 AM.png
+Name3[$e]=favicon.ico
+Name4[$e]=ic_launcher.png
+Name5[$e]=icon.png
+Name6[$e]=something.svg
+Name7[$e]=screenshot_2026-01-24_00:36:44.png
+Name8[$e]=3bad4012-c1bc-443e-867b-b212c97c4f70.webp
+Name9[$e]=3b7750c2-70f6-4751-b8cc-78807821f92a.webp
 
 [SideBar]
-InformationSplitterSizes=221,236
+InformationSplitterSizes=230,245
+IsVisible ViewMode FullScreen=true
+SideBarSplitterSizes=251,676
 
 [UiSettings]
 ColorScheme=KvDark

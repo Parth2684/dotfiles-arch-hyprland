@@ -2,10 +2,14 @@
 image/png=org.kde.gwenview.desktop;sxiv.desktop;swayimg.desktop;
 inode/directory=vlc.desktop;
 video/x-matroska=vlc.desktop;mpv.desktop;
-video/mp4=vlc.desktop;
-application/vnd.apple.mpegurl=mpv.desktop;vlc.desktop;
+video/mp4=mpv.desktop;vlc.desktop;
+application/vnd.apple.mpegurl=mpv.desktop;vlc.desktop;dev.zed.Zed.desktop;
 image/jpeg=org.kde.gwenview.desktop;
-application/x-zerosize=org.kde.gwenview.desktop;
+application/x-zerosize=vlc.desktop;org.kde.gwenview.desktop;
+application/octet-stream=Alacritty.desktop;vlc.desktop;
+image/svg+xml=org.kde.gwenview.desktop;
+image/webp=org.kde.gwenview.desktop;
 
 [Default Applications]
 x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
+application/octet-stream=vlc.desktop

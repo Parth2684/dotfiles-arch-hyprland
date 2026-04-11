@@ -1,6 +1,7 @@
 {
+    "name": "Untitled",
     "DesktopAudioDevice1": {
-        "prev_ver": 536870916,
+        "prev_ver": 536936448,
         "name": "Desktop Audio",
         "uuid": "c9af4ccb-48ce-4fee-a363-957d6bd2506f",
         "id": "pulse_output_capture",
@@ -31,7 +32,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536870916,
+        "prev_ver": 536936448,
         "name": "Mic/Aux",
         "uuid": "90810732-6c18-4192-98d3-0c259dec4f9b",
         "id": "pulse_input_capture",
@@ -45,7 +46,7 @@
         "volume": 1.0,
         "balance": 0.5,
         "enabled": true,
-        "muted": false,
+        "muted": true,
         "push-to-mute": false,
         "push-to-mute-delay": 0,
         "push-to-talk": false,
@@ -59,19 +60,67 @@
         "deinterlace_mode": 0,
         "deinterlace_field_order": 0,
         "monitoring_type": 0,
-        "private_settings": {}
-    },
-    "current_scene": "Scene",
-    "current_program_scene": "Scene",
-    "scene_order": [
-        {
-            "name": "Scene"
+        "private_settings": {
+            "volume_locked": true
         }
-    ],
-    "name": "Untitled",
+    },
     "sources": [
         {
-            "prev_ver": 536870916,
+            "prev_ver": 536936448,
+            "name": "Screen Capture (PipeWire)",
+            "uuid": "0f7e0903-df16-4c2d-915b-3c75e73d1315",
+            "id": "pipewire-screen-capture-source",
+            "versioned_id": "pipewire-screen-capture-source",
+            "settings": {
+                "RestoreToken": ""
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536936448,
+            "name": "Video Capture Device (PipeWire) (BETA)",
+            "uuid": "de013af7-d48b-4c99-b3fd-b8bba9ba92ff",
+            "id": "pipewire-camera-source",
+            "versioned_id": "pipewire-camera-source",
+            "settings": {
+                "format": "{\"encoded\":false,\"video_format\":4,\"width\":640,\"height\":360}",
+                "framerate": "{\"framerate\":{\"numerator\":30.0,\"denominator\":1.0}}",
+                "device_id": "v4l2_input.pci-0000_04_00.4-usb-0_1.2_1.0"
+            },
+            "mixers": 0,
+            "sync": 0,
+            "flags": 0,
+            "volume": 1.0,
+            "balance": 0.5,
+            "enabled": true,
+            "muted": false,
+            "push-to-mute": false,
+            "push-to-mute-delay": 0,
+            "push-to-talk": false,
+            "push-to-talk-delay": 0,
+            "hotkeys": {},
+            "deinterlace_mode": 0,
+            "deinterlace_field_order": 0,
+            "monitoring_type": 0,
+            "private_settings": {}
+        },
+        {
+            "prev_ver": 536936448,
             "name": "Scene",
             "uuid": "143033d8-9d9f-4b7e-91d6-34b481d4e512",
             "id": "scene",
@@ -138,8 +187,8 @@
                     {
                         "name": "Video Capture Device (PipeWire) (BETA)",
                         "source_uuid": "de013af7-d48b-4c99-b3fd-b8bba9ba92ff",
-                        "visible": true,
-                        "locked": false,
+                        "visible": false,
+                        "locked": true,
                         "rot": 0.0,
                         "scale_ref": {
                             "x": 1920.0,
@@ -156,20 +205,20 @@
                         "id": 3,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 1483.0,
-                            "y": 832.0
+                            "x": 1508.0,
+                            "y": 838.0
                         },
                         "pos_rel": {
-                            "x": 0.9685184955596924,
-                            "y": 0.5407407283782959
+                            "x": 1.014814853668213,
+                            "y": 0.5518518686294556
                         },
                         "scale": {
-                            "x": 0.6421874761581421,
-                            "y": 0.6416666507720947
+                            "x": 0.6078125238418579,
+                            "y": 0.6083333492279053
                         },
                         "scale_rel": {
-                            "x": 0.6421874761581421,
-                            "y": 0.6416666507720947
+                            "x": 0.6078125238418579,
+                            "y": 0.6083333492279053
                         },
                         "bounds": {
                             "x": 0.0,
@@ -215,63 +264,20 @@
             "monitoring_type": 0,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "Screen Capture (PipeWire)",
-            "uuid": "0f7e0903-df16-4c2d-915b-3c75e73d1315",
-            "id": "pipewire-screen-capture-source",
-            "versioned_id": "pipewire-screen-capture-source",
-            "settings": {
-                "RestoreToken": "eac12137-81ab-4594-bb41-f341217cb889"
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "Video Capture Device (PipeWire) (BETA)",
-            "uuid": "de013af7-d48b-4c99-b3fd-b8bba9ba92ff",
-            "id": "pipewire-camera-source",
-            "versioned_id": "pipewire-camera-source",
-            "settings": {
-                "format": "{\"encoded\":false,\"video_format\":4,\"width\":640,\"height\":360}",
-                "framerate": "{\"framerate\":{\"numerator\":30.0,\"denominator\":1.0}}",
-                "device_id": "v4l2_input.pci-0000_04_00.4-usb-0_1.2_1.0"
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
         }
     ],
     "groups": [],
+    "scene_order": [
+        {
+            "name": "Scene"
+        }
+    ],
+    "current_scene": "Scene",
+    "current_program_scene": "Scene",
+    "canvases": [],
+    "current_transition": "Fade",
+    "transition_duration": 300,
+    "transitions": [],
     "quick_transitions": [
         {
             "name": "Cut",
@@ -295,17 +301,29 @@
             "fade_to_black": true
         }
     ],
-    "transitions": [],
     "saved_projectors": [],
-    "canvases": [],
-    "current_transition": "Fade",
-    "transition_duration": 300,
     "preview_locked": false,
     "scaling_enabled": false,
-    "scaling_level": -7,
+    "scaling_level": -13,
     "scaling_off_x": 0.0,
     "scaling_off_y": 0.0,
-    "modules": {},
+    "virtual-camera": {
+        "type2": 3
+    },
+    "modules": {
+        "scripts-tool": [],
+        "output-timer": {
+            "streamTimerHours": 0,
+            "streamTimerMinutes": 0,
+            "streamTimerSeconds": 0,
+            "recordTimerHours": 0,
+            "recordTimerMinutes": 0,
+            "recordTimerSeconds": 0,
+            "autoStartStreamTimer": false,
+            "autoStartRecordTimer": false,
+            "pauseRecordTimer": false
+        }
+    },
     "resolution": {
         "x": 1920,
         "y": 1080
