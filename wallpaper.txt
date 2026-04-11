@@ -1,0 +1,8 @@
+ffmpeg -vaapi_device /dev/dri/renderD128 \
+-i 1764404565.mp4 \
+-vf 'format=nv12,hwupload,scale_vaapi=w=1920:h=1080' \
+-c:v h264_vaapi \
+-qp 23 \
+-r 60 \
+-an \
+output.mp4
