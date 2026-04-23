@@ -1,7 +1,7 @@
 {
     "name": "Untitled",
     "DesktopAudioDevice1": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936449,
         "name": "Desktop Audio",
         "uuid": "c9af4ccb-48ce-4fee-a363-957d6bd2506f",
         "id": "pulse_output_capture",
@@ -32,7 +32,7 @@
         "private_settings": {}
     },
     "AuxAudioDevice1": {
-        "prev_ver": 536936448,
+        "prev_ver": 536936449,
         "name": "Mic/Aux",
         "uuid": "90810732-6c18-4192-98d3-0c259dec4f9b",
         "id": "pulse_input_capture",
@@ -66,13 +66,13 @@
     },
     "sources": [
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936449,
             "name": "Screen Capture (PipeWire)",
             "uuid": "0f7e0903-df16-4c2d-915b-3c75e73d1315",
             "id": "pipewire-screen-capture-source",
             "versioned_id": "pipewire-screen-capture-source",
             "settings": {
-                "RestoreToken": ""
+                "RestoreToken": "b202364f-b2ea-46e9-b473-0f45e17cad33"
             },
             "mixers": 0,
             "sync": 0,
@@ -92,7 +92,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936449,
             "name": "Video Capture Device (PipeWire) (BETA)",
             "uuid": "de013af7-d48b-4c99-b3fd-b8bba9ba92ff",
             "id": "pipewire-camera-source",
@@ -120,7 +120,7 @@
             "private_settings": {}
         },
         {
-            "prev_ver": 536936448,
+            "prev_ver": 536936449,
             "name": "Scene",
             "uuid": "143033d8-9d9f-4b7e-91d6-34b481d4e512",
             "id": "scene",
