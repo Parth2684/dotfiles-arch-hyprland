@@ -123,7 +123,7 @@ layout {
 
     // You can customize the widths that "switch-preset-column-width" (Mod+R) toggles between.
     preset-column-widths {
-        // Proportion sets the width as a fraction of the output width, taking gaps into account.
+        // Propwortion sets the width as a fraction of the output width, taking gaps into account.
         // For example, you can perfectly fit four windows sized "proportion 0.25" on an output.
         // The default preset widths are 1/3, 1/2 and 2/3 of the output.
         proportion 0.33333
@@ -269,7 +269,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "nwg-look -a"
-spawn-sh-at-startup "pgrep mpvpaper || mpvpaper -n noctalia-wallpaper -o 'vo=libmpv hwdec=vaapi --gpu-context=wayland --profile=fast loop --panscan=1.0 --no-audio' eDP-1 ~/wallpaper/honoured-1.mp4"
+spawn-sh-at-startup "pgrep mpvpaper || mpvpaper -n noctalia-wallpaper -o 'vo=libmpv hwdec=vaapi --gpu-context=wayland --profile=fast loop --panscan=1.0 --no-audio' eDP-1 ~/wallpaper/gojo-blue-eyes-jjk.1920x1080.mp4"
 spawn-sh-at-startup "qs -c ~/.local/bin/bt-autoconnect.sh"
 // spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-sh-at-startup "waybar"
@@ -365,10 +365,17 @@ layer-rule {
   place-within-backdrop true
 }
 
-// Set transparent workspace background color so you see the backdrop at all times.
 
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+// Set transparent workspace background color so you see the backdrop at all times.
 // Optionally, disable the workspace shadows in the overview.
 overview {
+  
   workspace-shadow {
     off
   }
@@ -396,7 +403,7 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+B hotkey-overlay-title="Firefox" {spawn "firefox";}
     Mod+Z hotkey-overlay-title="Zed" {spawn "zeditor";}
-    Mod+W hotkey-overlay-title="Windsurf" {spawn "winsurf";}
+    Mod+W hotkey-overlay-title="Windsurf" {spawn "windsurf";}
     Mod+M hotkey-overlay-title="Strawberry" {spawn "strawberry";}
     Mod+E hotkey-overlay-title="Thunar" {spawn "thunar";}
     Mod+Return { spawn-sh "bash -c ~/.local/bin/bt-autoconnect.sh"; }

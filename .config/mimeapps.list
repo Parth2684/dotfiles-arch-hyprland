@@ -8,11 +8,22 @@ image/jpeg=org.kde.gwenview.desktop;
 application/x-zerosize=vlc.desktop;org.kde.gwenview.desktop;
 application/octet-stream=Alacritty.desktop;vlc.desktop;
 image/svg+xml=org.kde.gwenview.desktop;
-image/webp=org.kde.gwenview.desktop;
+image/webp=firefox.desktop;org.kde.gwenview.desktop;
 image/gif=org.kde.gwenview.desktop;vlc.desktop;
 application/json=dev.zed.Zed.desktop;
+application/pdf=firefox.desktop;
+audio/vnd.wave=mpv.desktop;org.strawberrymusicplayer.strawberry.desktop;
+audio/flac=mpv.desktop;
+audio/x-opus+ogg=mpv.desktop;
 
 [Default Applications]
 x-scheme-handler/fdm=freedownloadmanager_fdm_up.desktop
 application/octet-stream=vlc.desktop
 inode/directory=thunar.desktop
+video/x-matroska=vlc.desktop
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+x-scheme-handler/claude=com.anthropic.Claude.desktop

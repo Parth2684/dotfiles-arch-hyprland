@@ -16,6 +16,11 @@ alias sybaun='systemctl poweroff'
 alias nigga='sudo'
 alias hi='echo whad up gang'
 
+export JAVA_HOME=/opt/android-studio/jbr
+export ANDROID_HOME="$HOME/Android/Sdk"
+export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
+export PATH=$PATH:$ANDROID_HOME/build-tools/34.0.0
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -27,3 +32,4 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Added by flyctl installer
 export FLYCTL_INSTALL="/home/parth/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
+alias keys='/usr/bin/git --git-dir=$HOME/.keys/ --work-tree=$HOME'

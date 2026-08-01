@@ -3,9 +3,6 @@ CropAdvancedSettingsEnabled=true
 CropRatioHeight=1
 CropRatioWidth=1
 
-[FullScreen]
-FullScreenModeActive=true
-
 [General]
 LastUsedVersion=210800
 SideBarPage=operations
@@ -14,26 +11,26 @@ SideBarPage=operations
 MenuBar=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-16_11:23:46.png
-File10[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-21_18:03:36.png
-File2[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-19_19:48:19.png
-File3[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-19_19:48:21.png
-File4[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-19_19:51:37.png
-File5[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-19_19:48:25.png
-File6[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-19_19:51:36.png
-File7[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-21_18:00:54.png
-File8[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-21_18:03:15.png
-File9[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-21_18:03:19.png
-Name1[$e]=screenshot_2026-04-16_11:23:46.png
-Name10[$e]=screenshot_2026-04-21_18:03:36.png
-Name2[$e]=screenshot_2026-04-19_19:48:19.png
-Name3[$e]=screenshot_2026-04-19_19:48:21.png
-Name4[$e]=screenshot_2026-04-19_19:51:37.png
-Name5[$e]=screenshot_2026-04-19_19:48:25.png
-Name6[$e]=screenshot_2026-04-19_19:51:36.png
-Name7[$e]=screenshot_2026-04-21_18:00:54.png
-Name8[$e]=screenshot_2026-04-21_18:03:15.png
-Name9[$e]=screenshot_2026-04-21_18:03:19.png
+File1[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-21_18:03:15.png
+File10[$e]=$HOME/Downloads/ChatGPT Image Jun 5, 2026, 09_44_22 PM.png
+File2[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-21_18:03:19.png
+File3[$e]=$HOME/Pictures/Screenshots/screenshot_2026-04-21_18:03:36.png
+File4[$e]=$HOME/Downloads/ChatGPT Image May 28, 2026, 06_21_58 PM.png
+File5[$e]=$HOME/Downloads/ChatGPT Image May 28, 2026, 06_27_30 PM.png
+File6[$e]=$HOME/Projects/documind/src-tauri/target/release/bundle/deb/documind_0.1.0_amd64/data/usr/share/icons/hicolor/128x128/apps/documind.png
+File7[$e]=$HOME/.cache/com.parth.documind/pdfs/Parth_Resume_15_02_26__online_.pdf/9ee2d366-e06d-47f4-9ef0-379146905636.webp
+File8[$e]=$HOME/Projects/documind/src-tauri/target/release/bundle/deb/documind_0.1.0_amd64/data/usr/share/icons/hicolor/256x256@2/apps/documind.png
+File9[$e]=$HOME/Downloads/ChatGPT Image Jun 5, 2026, 09_42_58 PM.png
+Name1[$e]=screenshot_2026-04-21_18:03:15.png
+Name10[$e]=ChatGPT Image Jun 5, 2026, 09_44_22 PM.png
+Name2[$e]=screenshot_2026-04-21_18:03:19.png
+Name3[$e]=screenshot_2026-04-21_18:03:36.png
+Name4[$e]=ChatGPT Image May 28, 2026, 06_21_58 PM.png
+Name5[$e]=ChatGPT Image May 28, 2026, 06_27_30 PM.png
+Name6[$e]=documind.png
+Name7[$e]=9ee2d366-e06d-47f4-9ef0-379146905636.webp
+Name8[$e]=documind.png
+Name9[$e]=ChatGPT Image Jun 5, 2026, 09_42_58 PM.png
 
 [SideBar]
 InformationSplitterSizes=230,245

@@ -7,11 +7,44 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Zed (Default)",
+  "context_servers": {
+    "mcp-server-code-runner": {
+      "enabled": true,
+      "remote": false,
+      "settings": {},
+    },
+  },
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left",
+  },
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
+  "agent": {
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": [],
+  },
+  "git_panel": {
+    "dock": "left",
+  },
+  "icon_theme": {
+    "mode": "light",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
   "base_keymap": "VSCode",
   "ui_font_size": 16,
   "buffer_font_size": 15,
-  "theme": "Ayu Dark",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Ayu Dark",
+  },
   "autosave": {
     "after_delay": { "milliseconds": 1000 },
   },
@@ -21,42 +54,24 @@
     "show_type_hints": true,
     "show_parameter_hints": true,
   },
+  // "file_scan_exclusions": [
+  //   "**/.git",
+  //   "**/node_modules",
+  //   "**/target",
+  //   "**/dist",
+  //   "**/build",
+  // ],
 
   // --- LSP Configuration ---
   "lsp": {
-    // TypeScript / JavaScript
-    "vtsls": {
-      "settings": {
-        "typescript": {
-          "tsserver": {
-            "maxTsServerMemory": 2048,
-          },
-          "preferences": {
-            "importModuleSpecifier": "relative",
-            "quoteStyle": "single",
-            "autoImportFileExcludePatterns": [],
-            "includePackageJsonAutoImports": "on",
-            "importModuleSpecifierEnding": "minimal",
-          },
-          "suggest": {
-            "autoImports": true,
-            "completeFunctionCalls": true,
-          },
-          "format": {
-            "indentSize": 2,
-            "convertTabsToSpaces": true,
-          },
-          "inlayHints": {
-            "parameterNames": { "enabled": "all" },
-            "variableTypes": { "enabled": true },
-            "functionLikeReturnTypes": { "enabled": true },
-          },
-        },
-      },
-    },
-
     // Rust
     "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy",
+        },
+        "numThreads": 6,
+      },
       "settings": {
         "checkOnSave": false,
         "cargo": { "allTargets": false, "buildScripts": { "enable": false } },
@@ -97,13 +112,31 @@
   // --- Language Overrides ---
   "languages": {
     "JavaScript": {
-      "language_servers": ["vtsls", "!eslint"],
+      "language_servers": [
+        "vtsls",
+        "!tsgo",
+        "!typescript-language-server",
+        "eslint",
+        "...",
+      ],
     },
     "TypeScript": {
-      "language_servers": ["vtsls", "!eslint"],
+      "language_servers": [
+        "vtsls",
+        "!tsgo",
+        "!typescript-language-server",
+        "eslint",
+        "...",
+      ],
     },
     "TSX": {
-      "language_servers": ["vtsls", "!eslint"],
+      "language_servers": [
+        "vtsls",
+        "!tsgo",
+        "!typescript-language-server",
+        "eslint",
+        "...",
+      ],
     },
     "Rust": {
       "language_servers": ["rust-analyzer"],
