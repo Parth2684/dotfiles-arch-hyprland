@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 fastfetch
-
+alias parth='echo great software engineer'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
@@ -16,11 +16,16 @@ alias sybaun='systemctl poweroff'
 alias nigga='sudo'
 alias hi='echo whad up gang'
 
+kind-sudo() {
+    sudo env HOME="$HOME" kind "$@"
+}
+
 export JAVA_HOME=/opt/android-studio/jbr
 export ANDROID_HOME="$HOME/Android/Sdk"
 export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
 export PATH=$PATH:$ANDROID_HOME/build-tools/34.0.0
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+export HF_TOKEN="$(cat ~/.keys/hf_token)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -33,3 +38,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export FLYCTL_INSTALL="/home/parth/.fly"
 export PATH="$FLYCTL_INSTALL/bin:$PATH"
 alias keys='/usr/bin/git --git-dir=$HOME/.keys/ --work-tree=$HOME'
+
+# Added by Hugging Face CLI installer
+export PATH="/home/parth/.local/bin:$PATH"
+
+. "$HOME/.turso/env"
