@@ -16,10 +16,6 @@ alias sybaun='systemctl poweroff'
 alias nigga='sudo'
 alias hi='echo whad up gang'
 
-kind-sudo() {
-    sudo env HOME="$HOME" kind "$@"
-}
-
 export JAVA_HOME=/opt/android-studio/jbr
 export ANDROID_HOME="$HOME/Android/Sdk"
 export NDK_HOME="$ANDROID_HOME/ndk/$(ls -1 $ANDROID_HOME/ndk)"
