@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Compile and Run",
+    "command": "case \"$ZED_FILENAME\" in *.rs) rustc \"$ZED_FILE\" -o \"/tmp/$ZED_STEM\" && \"/tmp/$ZED_STEM\" ;; *.cpp|*.cc|*.cxx) g++ \"$ZED_FILE\" -o \"/tmp/$ZED_STEM\" && \"/tmp/$ZED_STEM\" ;; *) echo \"Unsupported file: $ZED_FILENAME\"; exit 1 ;; esac; exit $?",
+    "shell": {
+      "program": "/bin/bash",
+    },
+    "use_new_terminal": false,
+    "allow_concurrent_runs": true,
+    "reveal": "always",
+    "reveal_target": "dock",
+    "hide": "never",
+    "save": "current",
+    "tags": ["cpp", "rust"],
+  },
+]

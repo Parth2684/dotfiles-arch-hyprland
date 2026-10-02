@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "toolbar": {
+    "code_actions": false,
+  },
   "context_servers": {
     "mcp-server-code-runner": {
       "enabled": true,
@@ -45,6 +48,7 @@
     "light": "One Light",
     "dark": "Ayu Dark",
   },
+  "auto_indent": "preserve_indent",
   "autosave": {
     "after_delay": { "milliseconds": 1000 },
   },
@@ -70,7 +74,6 @@
         "check": {
           "command": "clippy",
         },
-        "numThreads": 6,
       },
       "settings": {
         "checkOnSave": false,
@@ -111,9 +114,17 @@
 
   // --- Language Overrides ---
   "languages": {
+    "SQL": {
+      "format_on_save": "on",
+    },
+    "Python": {
+      // "enable_language_server": false,
+    },
+
     "JavaScript": {
       "language_servers": [
-        "vtsls",
+        "typescript-ls",
+        "!vtsls",
         "!tsgo",
         "!typescript-language-server",
         "eslint",
@@ -122,7 +133,8 @@
     },
     "TypeScript": {
       "language_servers": [
-        "vtsls",
+        "typescript-ls",
+        "!vtsls",
         "!tsgo",
         "!typescript-language-server",
         "eslint",
@@ -131,7 +143,8 @@
     },
     "TSX": {
       "language_servers": [
-        "vtsls",
+        "typescript-ls",
+        "!vtsls",
         "!tsgo",
         "!typescript-language-server",
         "eslint",
@@ -155,6 +168,16 @@
     },
     "Dockerfile": {
       "language_servers": ["dockerfile-language-server"],
+    },
+    "YAML": {
+      "indent_guides": {
+        "enabled": true,
+        "line_width": 2,
+        "active_line_width": 3,
+        "coloring": "indent_aware",
+      },
+      "format_on_save": "off",
+      "language_servers": ["rlsp-yaml", "dockerfile-language-server"],
     },
   },
 }
